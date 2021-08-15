@@ -8,23 +8,19 @@ html {
 }
 :root {
   /* Primary */
-
   /* Main background */
   --very-dark-blue: hsl(233, 47%, 7%);
   /* card background */
   --dark-desaturated-blue: hsl(244, 38%, 16%);
   /* accent */
   --soft-violet: hsl(277, 64%, 61%);
-
   /* Neutral */
-
   /* (main heading, stats) */
   --white: hsl(0, 0%, 100%);
   /* (main paragraph) */
   --main-slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
   /* (stat headings) */
   --stat-slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
-
   /* Principal Font Family */
   --inter: "Inter", sans-serif;
   --lexend: "Lexend Deca", sans-serif;
@@ -34,9 +30,11 @@ body {
   background-color: var(--very-dark-blue);
 }
 main {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .component-ctn {
@@ -44,7 +42,7 @@ main {
   flex-direction: column;
   max-width: 220px;
   border-radius: 10px;
-  margin: 20px 0;
+  margin-bottom: 20px;
 
   font-size: 1.5rem;
 }
