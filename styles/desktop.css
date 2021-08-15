@@ -63,3 +63,7 @@ html {
   position: relative;
   left: -1px;
 }
+
+.attribution {
+  max-width: 500px;
+}

@@ -30,24 +30,21 @@ html {
   --lexend: "Lexend Deca", sans-serif;
 }
 
-main {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
   background-color: var(--very-dark-blue);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .component-ctn {
   display: flex;
   flex-direction: column;
   max-width: 220px;
-  border: 1px solid black;
   border-radius: 10px;
-
-  color: var(--main-slightly-transparent-white);
-  background-color: var(--dark-desaturated-blue);
+  margin: 20px 0;
 
   font-size: 1.5rem;
 }
@@ -58,24 +55,21 @@ main {
   align-items: center;
   padding: 25px 20px;
 }
-
 .component__img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-image: linear-gradient(
-      hsla(277, 64%, 60%, 0.4),
-      hsla(277, 64%, 65%, 0.5)
-    ),
-    url("../images/image-header-mobile.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--soft-violet);
-
-  filter: saturate(1.2) brightness(0.8);
-
-  width: 218px;
-  height: 160px;
+  content: url("../images/image-header-mobile.jpg");
+  display: block;
+  max-width: 100%;
+}
+.bg-img {
+  background: var(--soft-violet);
+}
+.bg-component {
+  background: var(--dark-desaturated-blue);
+}
+.img-color {
+  filter: grayscale(100);
+  opacity: 0.8;
+  mix-blend-mode: multiply;
 }
 .component__title {
   margin-bottom: 20px;
@@ -126,18 +120,13 @@ main {
   font-weight: 400;
 }
 
-footer {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  background-color: var(--very-dark-blue);
-}
 .attribution {
+  max-width: 200px;
   color: white;
   position: relative;
-  top: -5px;
 
   font-size: 1.5rem;
+  text-align: center;
 }
 a {
   color: var(--soft-violet);
