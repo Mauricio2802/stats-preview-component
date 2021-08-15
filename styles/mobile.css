@@ -56,12 +56,16 @@ main {
   padding: 25px 20px;
 }
 .component__img {
+  max-width: 100%;
   content: url("../images/image-header-mobile.jpg");
   display: block;
-  max-width: 100%;
+  overflow: hidden;
 }
 .bg-img {
   background: var(--soft-violet);
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .bg-component {
   background: var(--dark-desaturated-blue);
